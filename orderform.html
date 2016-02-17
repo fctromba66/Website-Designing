@@ -1,0 +1,193 @@
+﻿<html>
+<head>
+    <title>Cameron Cookies</title>
+    <style type="text/css">
+        body {
+            background-image: url(images/cookienmilk.jpeg);
+            background-repeat: no-repeat;
+            background-color: #ECEAEF;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        h2 {
+            font-style: italic;
+            text-align: center;
+        }
+
+        h4 {
+            font-style: normal;
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        table {
+            text-align: center;
+            border: none;
+            width: 500px;
+        }
+    </style>
+    <link rel="stylesheet" href="cookies.css" type="text/css" />
+</head>
+<body>
+    <h1> Cameron Cookies </h1>
+    <h2>The best homemade cookies in New England.</h2>
+    <h4>99 Sycamore St. Portland, ME 04101 (207)555-1212</h4>
+    <table>
+        <tr>
+            <td><a href="about.html">About Us</a></td>
+            <td><a href="mailto:cookiemaster@cameroncookies.com">Contact Us</a></td>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="recipe.html">Sample Recipe</a></td>
+        </tr>
+    </table>
+    <br />
+    <div class="left">
+    <form>
+    <fieldset>
+    <legend><b>Personal Information</b></legend>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="first name" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="last name" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state" maxlength="2" /></td>
+            </tr>
+            <tr>
+                <td>Zip Code</td>
+                <td><input type="text" name="zipcode" maxlength="5" /></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="country" maxlength="30" /></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+    </div>
+    <div class="left">
+    <form>
+    <table border="1"><p style="font-weight:bold;">Order Information</p>
+        <tr>
+            <td>Qty</td>
+            <td></td>
+            <td>Subtotal</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="chocnut" maxlength="2" size="2" /></td>
+            <td>Chocolate Nut $10.99</td>
+            <td><input type="text" name="totalcnut" maxlength="10" size="5" /> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="chocchip" maxlength="2" size="2" /></td>
+            <td>Chocolate Chip $9.99</td>
+            <td><input type="text" name="totalchip" maxlength="10" size="5" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="macanut" maxlength="2" size="2" /></td>
+            <td>Macadamia Nut $12.99</td>
+            <td><input type="text" name="totalmnut" maxlength="10" size="5" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="oatraisin" maxlength="2" size="2" /></td>
+            <td>Oatmeal Raisin $10.99</td>
+            <td><input type="text" name="totaloatr" maxlength="10" size="5" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="chocdess" maxlength="2" size="2" /></td>
+            <td>Chocolate Dessert $10.99</td>
+            <td><input type="text" name="totalcdess" maxlength="10" size="5" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="butter" maxlength="2" size="2" /></td>
+            <td>Butter $7.99</td>
+            <td><input type="text" name="totalbutt" maxlength="10" size="5" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Subtotal</td>
+            <td><input type="text" name="subtotal" maxlength="10" size="5" /></td>
+        </tr>
+    </table>
+    </form>
+    </div>
+    <div class="right">
+    <form>
+            <input type="checkbox" name="gift" /> Gift wrapping? (Additional charge of 1.95 per box)
+            <p>If yes, note for text for the gift card.</p>
+            <textarea name="gift info" rows="5" cols="30"></textarea>
+            <br />
+            <br />
+            <p>
+                <label for="shipping">Shipping</label>
+                <label>$5.95 for 1-5 boxes, $10.95 for five or more boxes.</label>
+            </p>
+            <p>
+                <label for="total">Total</label>
+                <input type="text" name="total" maxlength="10" size="10" />
+            </p>
+    </form>
+    </div>
+    <div class="left">
+    <form>
+    <fieldset>
+    <legend><b>Payment Information</b></legend>
+        <p>
+        <input type="radio" size="small" value="master" />Mastercard
+        <input type="radio" size="small" value="visa" />Visa
+        </p>
+        <p>
+        <label for="creditcard">Credit Card Number</label>
+        <input type="text" name="credit card" maxlength="16" size="16" />
+        </p>
+        <p>
+        <label for="expire">Expiration</label>
+        <select name="month">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <select>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+        </select>
+        </p>
+        <input type="submit" value="SUBMIT" />     
+    </fieldset>   
+    </form>
+    </div>
+</body>
+</html>
